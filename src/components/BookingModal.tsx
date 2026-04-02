@@ -26,7 +26,7 @@ export default function BookingModal({ vehicle, onClose }: BookingModalProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const phoneNumber = "918072729424";
+    const phoneNumber = "918072719424";
     const message = `*New Booking Request*\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nVehicle: ${vehicle.name}\nType: ${vehicle.type}\nMembers: ${formData.members}\nDays: ${formData.days}\nDate: ${formData.date}\n\nPlease confirm availability.`;
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
